@@ -1,0 +1,199 @@
+//=====================================================================================
+//Card slider
+.slider {
+	// .slider__item
+	&__item {
+	}
+	// .slider__slide
+	&__slide {
+	}
+}
+
+.slider-popular {
+	position: relative;
+	padding: 0px 0px;
+	// .slider-popular__item
+	&__item {
+	}
+}
+/* Слайд */
+.slider-popular .slick-slide {
+	margin: 20px 10px;
+}
+
+/* Лента слайдов */
+.slider-popular .slick-track {
+	display: flex;
+	width: 100%;
+	min-width: 0;
+}
+/* Ограничивающая оболочка */
+.slider-popular .slick-list {
+	overflow: hidden;
+	@media (max-width: 768px) {
+		overflow: visible;
+	}
+}
+
+/* Стрелка */
+.slider-popular .slick-arrow {
+	position: absolute;
+	top: 50%;
+	font-size: 0;
+	width: 15px;
+	height: 30px;
+	z-index: 39;
+}
+/* Стрелка влево */
+.slider-popular .slick-arrow.slick-prev {
+	left: -30px;
+	background: url("/img/icons/slider-arrow_left.svg") 0 0 / 100% no-repeat;
+}
+/* Стрелка вправо */
+.slider-popular .slick-arrow.slick-next {
+	right: -30px;
+	background: url("/img/icons/slider-arrow_right.svg") 0 0 / 100% no-repeat;
+}
+/* Точки (булиты) */
+.slider-popular .slick-dots {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.slider-popular .slick-dots li {
+	list-style: none;
+}
+/* Активная точка */
+.slider-popular .slick-dots li.slick-active button {
+	background-color: #556989;
+	border: 2px solid #556989;
+	height: 6px;
+}
+/* Элемент точки */
+.slider-popular .slick-dots li button {
+	font-size: 0;
+	width: 55px;
+	height: 4px;
+	border: 2px solid #eff5ff;
+	background-color: #eff5ff;
+}
+
+//=====================================================================================
+//Header slider
+.slide {
+	background: url("/img/homepage/page/slider/img-1.png") center / cover no-repeat;
+	min-height: 682px;
+	/*---Mobile---*/
+	@media (max-width: 450px) {
+		min-height: 445px;
+	}
+	// .slide__container
+	&__container {
+	}
+	// .slide__body
+	&__body {
+		padding: 230px 0px 0px 0px;
+		/*---Mobile---*/
+		@media (max-width: 450px) {
+			padding: 200px 0px 60px 0px;
+		}
+	}
+	// .slide__items
+	&__items {
+		display: flex;
+		flex-direction: column;
+		&:last-child {
+			margin: 0px 0px 0px 0px;
+		}
+		@media (max-width: 768px) {
+			align-items: center;
+			text-align: center;
+		}
+	}
+	// .slide__item
+	&__item {
+		margin: 0px 0px 30px 0px;
+	}
+	// .slide__title
+	&__title {
+		font-weight: 900;
+		font-size: 40px;
+		line-height: 46px;
+		color: #fff;
+		/*---Mobile---*/
+		@media (max-width: 450px) {
+			font-size: 23px;
+			line-height: 28px;
+		}
+	}
+	// .slide__text
+	&__text {
+		font-weight: 400;
+		font-size: 18px;
+		line-height: 21px;
+		color: #fff;
+		/*---Mobile---*/
+		@media (max-width: 450px) {
+			font-size: 16px;
+			line-height: 19px;
+		}
+	}
+	// .slide__button
+	&__button {
+		display: inline-block;
+	}
+}
+/* Стилицазия слайдов */
+.slider-dots {
+	position: absolute;
+	width: 100%;
+	bottom: 10%;
+	left: 0;
+	z-index: 40;
+	/*---Mobile---*/
+	@media (max-width: 768px) {
+		bottom: 2%;
+	}
+	// .slider-dots__container
+	&__container {
+	}
+	// .slider-dots__body
+	&__body {
+	}
+}
+/* Лента слайдов */
+.slider .slick-track {
+	display: flex;
+}
+/* Ограничивающая оболочка */
+.slider .slick-list {
+	overflow: hidden;
+	@media (max-width: 768px) {
+		overflow: visible;
+	}
+}
+.slider .slick-arrow {
+}
+/* Точки (булиты) */
+.slider-dots__body .slick-dots {
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+}
+.slider-dots__body .slick-dots li {
+	list-style: none;
+	margin: 0px 5px;
+}
+/* Активная точка */
+.slider-dots__body .slick-dots li.slick-active button {
+	background-color: #fff;
+}
+/* Элемент точки */
+.slider-dots__body .slick-dots li button {
+	font-size: 0;
+	width: 19px;
+	height: 19px;
+	border: 2px solid #fff;
+	background-color: rgba(255, 255, 255, 0);
+	border-radius: 50%;
+}

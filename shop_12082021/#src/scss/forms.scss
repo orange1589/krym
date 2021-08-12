@@ -1,0 +1,85 @@
+.btn-slider {
+	font-family: "Roboto";
+	font-size: 18px;
+	line-height: 21px;
+	font-weight: 700;
+	color: #fff;
+	padding: 21px 60px;
+	border-radius: 4px;
+	border-color: #fff;
+	border: 0.779167px solid #eff5ff;
+	box-shadow: 0px 0px 9.35px #eff5ff;
+	transition: all 0.3s ease 0s;
+	&:hover {
+		box-shadow: 0px 0px 13.35px #eff5ff;
+		transition: all 0.3s ease 0s;
+	}
+	/*---Mobile---*/
+	@media (max-width: 450px) {
+		font-size: 16px;
+		line-height: 19px;
+		padding: 12px 35px;
+	}
+}
+.title {
+	font-family: "Roboto";
+	font-size: 26px;
+	line-height: 30px;
+	font-weight: 700;
+	color: #050023;
+	margin: 0px 0px 50px 0px;
+	/*---Mobile---*/
+	@media (max-width: 450px) {
+		margin: 0px 0px 25px 0px;
+		font-size: 23px;
+		line-height: 26px;
+		font-weight: 900;
+	}
+}
+.btn-card {
+	display: inline-block;
+	font-family: "Roboto";
+	font-size: 18px;
+	line-height: 21px;
+	font-weight: 700;
+	color: #fff;
+	padding: 9px 21px;
+	border-radius: 4px;
+	background-color: #050023;
+	/*---Mobile---*/
+	@media (max-width: 450px) {
+		font-size: 18px;
+		line-height: 21px;
+	}
+}
+.name {
+	font-family: "Roboto";
+	font-size: 20px;
+	line-height: 23px;
+	font-weight: 400;
+	color: #050023;
+	/*---Mobile---*/
+	@media (max-width: 450px) {
+		font-size: 16px;
+		line-height: 19px;
+	}
+}
+.price {
+	font-family: "Roboto";
+	font-size: 24px;
+	line-height: 28px;
+	font-weight: 700;
+	color: #050023;
+	position: relative;
+	margin: 0px 25px 0px 0px;
+	&::before {
+		content: "";
+		position: absolute;
+		display: block;
+		top: 13%;
+		right: -20px;
+		width: 17px;
+		height: 19px;
+		background-image: url(/img/icons/ruble_blue.svg);
+	}
+}

@@ -1,0 +1,105 @@
+/* ----------------------------------------------------*/
+/*---------------Import styles-------------------------*/
+/* ----------------------------------------------------*/
+
+@import "mixins";
+@import "fonts";
+@import "forms";
+@import "header";
+@import "footer";
+@import "page";
+@import "slick";
+@import "popular";
+@import "product-card";
+@import "categories";
+@import "subscribe";
+
+/* ----------------------------------------------------*/
+/*---------------Nulling style-------------------------*/
+/* ----------------------------------------------------*/
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	box-sizing: border-box;
+}
+ol li,
+ul li {
+	list-style: none;
+}
+a,
+a:visited {
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: inherit;
+	font-size: inherit;
+}
+img {
+	vertical-align: top;
+}
+html,
+body {
+	height: 100%;
+	font-size: 14px;
+	line-height: 1;
+	font-family: "Roboto";
+	color: #050023;
+}
+input,
+button,
+textarea {
+	font-family: inherit;
+}
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+}
+main {
+	flex: 1 1 auto;
+}
+/* ---------------------------------------------------*/
+/*---------------Main wrapper-------------------------*/
+/* ---------------------------------------------------*/
+.wrapper {
+	min-height: 100%;
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+}
+
+/*------------------------------------------------------*/
+/*---------------Main container 1170px------------------*/
+/*------------------------------------------------------*/
+._container {
+	max-width: 1200px;
+	padding: 0px 15px;
+	margin: 0px auto;
+	//	@media (max-width: 1190px) {
+	//		max-width: 970px;
+	//	}
+	//	@media (max-width: 992px) {
+	//		max-width: 750px;
+	//	}
+	//	@media (max-width: 768px) {
+	//		max-width: none;
+	//		padding: 0px 36px;
+	//	}
+}
+/*---------------------------------------------*/
+/*----------------SliderSlick------------------*/
+/*---------------------------------------------*/
