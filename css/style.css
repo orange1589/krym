@@ -136,9 +136,9 @@ textarea {
   font-family: inherit;
 }
 
-input[type=text],
-input[type=email],
-input[type=tel],
+input[type="text"],
+input[type="email"],
+input[type="tel"],
 textarea {
   -webkit-appearance: none;
   appearance: none;
@@ -830,17 +830,17 @@ textarea {
 }
 @media (max-width: 768px) {
   .feedback {
-    background: url("../img/homepage/feedback/bg.png") -190px 0/auto 100% no-repeat;
+    background: url("../img/homepage/feedback/bg.png") -190px 0 / auto 100% no-repeat;
   }
 }
 @media (max-width: 698px) {
   .feedback {
-    background: url("../img/homepage/feedback/bg.png") -350px 0/auto 100% no-repeat;
+    background: url("../img/homepage/feedback/bg.png") -350px 0 / auto 100% no-repeat;
   }
 }
 @media (max-width: 426px) {
   .feedback {
-    background: url("../img/homepage/feedback/bg.png") -250px 0/auto 100% no-repeat;
+    background: url("../img/homepage/feedback/bg.png") -250px 0 / auto 100% no-repeat;
   }
 }
 .feedback__items {
@@ -917,6 +917,9 @@ textarea {
   font-size: 14px;
   line-height: 16px;
   margin: 0px 0px 20px 0px;
+}
+.input:focus {
+  outline: none;
 }
 
 .review__items {
